@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name          = 'logstash-input-logstash-input-read_file'
+  s.name          = 'logstash-input-read_file'
   s.version       = '0.1.0'
   s.licenses      = ['Apache License (2.0)']
   s.summary       = 'Logstash input plugin to read from file without tailing'
