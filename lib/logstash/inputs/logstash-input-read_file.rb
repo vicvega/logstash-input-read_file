@@ -9,7 +9,7 @@ require "socket" # for Socket.gethostname
 # This plugin is intented only as an example.
 
 class LogStash::Inputs::LogstashInputReadFile < LogStash::Inputs::Base
-  config_name ""
+  config_name "read_file"
 
   # If undefined, Logstash will complain, even if codec is unused.
   default :codec, "plain"
