@@ -2,9 +2,9 @@ Gem::Specification.new do |s|
   s.name          = 'logstash-input-logstash-input-read_file'
   s.version       = '0.1.0'
   s.licenses      = ['Apache License (2.0)']
-  s.summary       = 'TODO: Write a short summary, because Rubygems requires one.'
-  s.description   = '{TODO: Write a longer description or delete this line.'
-  s.homepage      = 'TODO: Put your plugin''s website or public repo URL here.'
+  s.summary       = 'Logstash input plugin to read from file without tailing'
+  s.description   = 'Logstash input plugin to read from file. It reads the content of each file once, without tailing'
+  s.homepage      = 'https://github.com/vicvega/logstash-input-read_file'
   s.authors       = ['Francesco Coda Zabetta']
   s.email         = ''
   s.require_paths = ['lib']
@@ -15,10 +15,10 @@ Gem::Specification.new do |s|
   s.test_files = s.files.grep(%r{^(test|spec|features)/})
 
   # Special flag to let us know this is actually a logstash plugin
-  s.metadata = { "logstash_plugin" => "true", "logstash_group" => "input" }
+  s.metadata = { 'logstash_plugin' => 'true', 'logstash_group' => 'input' }
 
   # Gem dependencies
-  s.add_runtime_dependency "logstash-core-plugin-api", "~> 2.0"
+  s.add_runtime_dependency 'logstash-core-plugin-api', '~> 2.0'
   s.add_runtime_dependency 'logstash-codec-plain'
   s.add_runtime_dependency 'stud', '>= 0.0.22'
   s.add_development_dependency 'logstash-devutils', '>= 0.0.16'
